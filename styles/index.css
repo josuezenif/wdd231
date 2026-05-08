@@ -1,0 +1,131 @@
+/* ------------ COLOR SCHEME --------- */
+/* 
+
+dark blue : #0d172e 
+light dark blue : #233c78 
+
+*/
+
+
+
+/* GENERAL CSS APPLIED TO ALL SITE */
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* ------------------ HEADER ---------------- */
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: end;
+    padding: 5px 0 5px 10px;
+    column-gap: 10px;
+    border-bottom: 1.2px solid #d5d5d5;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #0d172e;
+}
+
+/* ----------------- HAMBURGER ICON NAVIGATION ---------------- */
+.hamburger {
+    background: none;
+    border: none;
+    color: #233c78;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+/* ----------- NAVIGATION BAR ---------- */
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 17px;
+}
+
+.navigation ul li a:hover {
+    text-decoration: none;
+    border: 1.4px solid #000000;
+    padding: 8px 15px;
+    background-color: rgb(58, 110, 131);
+    color: #fff;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    border: 1.4px solid #233c78;
+    padding: 8px 15px;
+    margin: 0;
+    background-color: rgb(199, 224, 235);
+    color: #081d2a;
+}
+
+/* ---------------- FOOTER CONTENT -------------- */
+footer {
+    background-color: #ececec;
+    padding: 20px;
+    border: 1.3px solid #d5d5d5;
+}
+
+.social-media {
+    display: flex;
+    column-gap: 15px;
+    justify-content: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+.social-media img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    border: 1px solid #cec6c6;
+    border-radius: 1.8em;
+    padding: 10px;
+}
+
+.social-media img:hover {
+    background-color: #ffffff;
+}
+
+
+
+
+/* ------------- SMALL SCREEN USERS ---------- */
+@media screen and (max-width: 38rem) {
+    .navigation {
+        display: none;
+    }
+
+    .navigation.show {
+        display: block;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
