@@ -13,26 +13,84 @@
     <link rel="stylesheet" href="styles/index-large.css">
 
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course-info.js" defer></script>
+
+    <!------------ FONT FAMILY ------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
         <img src="images/home.svg" alt="Home logo" width="512" height="512">
-        <span>Josue Zenif Home page</span>
+        <span>Josue Zenif Home Page</span>
         <button id="ham-button" class="hamburger"></button>
 
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li class="current"><a href="https://www.facebook.com/josuezenif.baez">Facebook</a></li>
-                <li><a href="https://www.instagram.com/josuezenif/">Instagram</a></li>
-                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="chamber.html">Chamber</a></li>
+                <li><a href="final.html">Final</a></li>
+                <!-- <li><a href="https://byupw.instructure.com/">Canvas</a></li> -->
             </ul>
         </nav>
     </header>
 
     <main>
         <h1>Home</h1>
+        <div class="student-info">
+            <section class="about-me">
+                <h2>About Me</h2>
+                <p>
+                    My name is Josue Zenif Baez Gomez and I was born in Mexico, Saltillo Coahuila. I currently live in
+                    Quebec Canada and I
+                    speak Spanish, English and French. I am studying in BYU-Idaho Online for now and I plan to go on a
+                    mission this year
+                    2026, in July or August. I am studying software development and I plan to get a Bachelors in that
+                    domain. I want to go
+                    study in person when I return from my mission, but for now I am studying as much as I can and
+                    working
+                    to earn money for
+                    myself and my future studies.
+                </p>
+            </section>
+
+            <section class="personal-photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile-pic.jpg" alt="Personal picture of me" width="1510" height="850">
+            </section>
+
+        </div>
+
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="course-name">
+                <button id="all">
+                    <p class="all"><strong>All</strong></p>
+                </button>
+
+                <button id="cse">
+                    <p class="cse"><strong>CSE</strong></p>
+                </button>
+
+                <button id="wdd">
+                    <p class="wdd"><strong>WDD</strong></p>
+                </button>
+
+                <!-- <p id="course1" class="wdd130">WDD 130</p>
+                <p id="course2" class="wdd131">WDD 131</p>
+                <p id="course3" class="wdd231">WDD 231</p> -->
+            </div>
+
+            <p class="num-credits">
+                The total number of credits for these courses is <span id="credits">0</span>
+            </p>
+
+            <ul id="course-list" class="classes"></ul>
+        </section>
     </main>
 
     <footer>
@@ -46,11 +104,8 @@
             <a href="https://www.instagram.com/josuezenif/"><img src="images/instagram.svg" alt="Instagram account"
                     width="150" height="150"></a>
         </div>
-        <p>©️ Josue Zenif Baez Gomez | Saltillo, Mexico 2026 🇲🇽</p>
-        <p>Last Modified:
-        <p id="last-modifieds"></p>
-        </p>
-
+        <p>©️ <span id="current-year"></span> Josue Zenif Baez Gomez | Saltillo, Mexico 🇲🇽</p>
+        <p id="lastModified"></p>
     </footer>
 
 </body>

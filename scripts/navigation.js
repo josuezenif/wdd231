@@ -9,3 +9,12 @@ hamButton.addEventListener('click', () => {
     navBar.classList.toggle('show');
 });
 
+
+// -------------- DISPLAYING CURRENT YEAR -----------
+const currentYear = document.querySelector('#current-year');
+const today = new Date();
+
+currentYear.innerHTML = today.getFullYear();
+
+// -------------- LAST MODIFIED --------------
+const lastModified = document.querySelector('#lastModified').innerHTML = `Last Modified: ` + document.lastModified;

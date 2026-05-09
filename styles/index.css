@@ -32,7 +32,7 @@ header img {
 }
 
 header span {
-    font-size: 1.2rem;
+    font-size: 1.235rem;
     color: #0d172e;
 }
 
@@ -76,8 +76,14 @@ header span {
     border: 1.4px solid #233c78;
     padding: 8px 15px;
     margin: 0;
-    background-color: rgb(199, 224, 235);
+    background-color: rgb(166, 221, 245);
     color: #081d2a;
+}
+
+.navigation li.current a {
+    background-color: rgb(19, 94, 124);
+    color: #ffffff;
+    border: 1.4px solid #000000;
 }
 
 /* ---------------- FOOTER CONTENT -------------- */
@@ -111,6 +117,157 @@ footer p {
     background-color: #ffffff;
 }
 
+/* --------------- STUDENT INFO ---------- */
+.student-info {
+    display: grid;
+    grid-template-columns: 60% 38.45%;
+    column-gap: 20px;
+}
+
+.personal-photo img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 6px 2px 6px;
+}
+
+.personal-photo h2 {
+    margin-top: 0;
+}
+
+.personal-photo {
+    border: 1.5px solid #133042;
+}
+
+h2 {
+    background-color: #233c78;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1.5px solid #133042;
+}
+
+.about-me {
+    border: 1.5px solid #133042;
+}
+
+.about-me h2 {
+    margin-top: 0;
+}
+
+.about-me p {
+    padding: 0 8px;
+}
+
+
+
+
+/* ------------- WEB CERTIFICATE COURSES ------------ */
+.course-name {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    column-gap: 8px;
+    padding: 0 10px;
+}
+
+.courses h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.courses {
+    border: 1.5px solid #133042;
+    margin: 25px 0;
+}
+
+.all {
+    grid-column: 1/2;
+    border: 1.5px solid rgb(136, 136, 136);
+    padding: 5px;
+    border-radius: 0.7em;
+    background-color: rgb(227, 227, 227);
+}
+
+.all:hover,
+.cse:hover,
+.wdd:hover {
+    background-color: #d5d5d5;
+}
+
+/* USE LATER */
+.wdd130 {
+    grid-column: 1/2;
+    border: 1.2px solid rgb(175, 175, 175);
+    padding: 5px;
+    border-radius: 0.3em;
+    background-color: rgb(174, 243, 226);
+}
+
+.cse {
+    grid-column: 2/3;
+    border: 1.5px solid rgb(136, 136, 136);
+    padding: 5px;
+    border-radius: 0.7em;
+    background-color: rgb(227, 227, 227);
+}
+
+.wdd131 {
+    grid-column: 2/3;
+    border: 1.2px solid rgb(175, 175, 175);
+    padding: 5px;
+    border-radius: 0.3em;
+    background-color: rgb(174, 243, 226);
+}
+
+.wdd {
+    grid-column: 3/4;
+    border: 1.5px solid rgb(136, 136, 136);
+    padding: 5px;
+    border-radius: 0.7em;
+    background-color: rgb(227, 227, 227);
+}
+
+.wdd231 {
+    grid-column: 3/4;
+    border: 1.2px solid rgb(175, 175, 175);
+    padding: 5px;
+    border-radius: 0.3em;
+    background-color: rgb(174, 243, 226);
+}
+
+.num-credits {
+    text-align: center;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.classes {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.classes li {
+    background-color: #a3cde5;
+    padding: 7px 18px;
+    border: 1.3px solid #bbbbbb;
+}
+
+li.complete {
+    background-color: rgb(123, 248, 163);
+}
+
+
 
 
 
@@ -128,4 +285,29 @@ footer p {
         flex-direction: column;
         gap: 25px;
     }
+
+    .student-info {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    header,
+    main,
+    footer {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .classes {
+        flex-direction: column;
+        padding-left: 0;
+        padding: 0 10px;
+        gap: 10px;
+    }
+
+    .classes li {
+        border: 1.3px solid #bbbbbb;
+    }
+
 }

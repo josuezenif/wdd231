@@ -4,7 +4,7 @@
     main,
     footer,
     nav {
-        max-width: 900px;
+        max-width: 1250px;
         margin: 0 auto;
     }
 
@@ -21,4 +21,7 @@
         display: block;
     }
 
+    header span {
+        font-size: 1.5em;
+    }
 }
