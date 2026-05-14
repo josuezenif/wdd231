@@ -1,0 +1,33 @@
+{
+    "familyName": "Baez Gomez",
+    "dateMoved": "14 October 2019",
+    "numberOfRecords": 5,
+    "vistedByBishop": true,
+    "familyData": [
+        {
+            "name": "Josue",
+            "gender": "male",
+            "birthdate": "15 November 1981"
+        },
+        {
+            "name": "Herendira",
+            "gender": "female",
+            "birthdate": "14 August 1981"
+        },
+        {
+            "name": "Samanta",
+            "gender": "female",
+            "birthdate": "20 Febuary 2005"
+        },
+        {
+            "name": "Nahim",
+            "gender": "female",
+            "birthdate": "28 Marzo 2006"
+        },
+        {
+            "name": "Alan",
+            "gender": "male",
+            "birthdate": "11 June 2009"
+        }
+    ]
+}
