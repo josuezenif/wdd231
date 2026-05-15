@@ -1,0 +1,19 @@
+header,
+main,
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.prophets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 5em;
+}
+
+section h2 {
+    background-color: rgb(138, 231, 172);
+    padding: 10px;
+    text-align: center;
+}
