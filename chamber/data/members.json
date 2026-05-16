@@ -5,7 +5,7 @@
             "address": "245 Rue Notre-Dame S, Sainte-Marie, QC G6E 2V4",
             "phoneNumber": "(418) 555-0132",
             "websiteURL": "www.beauceboisconstruction.ca",
-            "imageFile": "https://www.cshq.ca/uploads/pages/14/4/2/7/c8010c65a17fa0023392e0f27441db17.thumb.jpg",
+            "imageFile": "https://josuezenif.github.io/wdd231/chamber/images/bois.jpg",
             "membershipLevel": 3,
             "additionalInfo": "Specializes in residential framing and eco-friendly wood structures"
         },
@@ -23,7 +23,7 @@
             "address": "67 Rang St-Gabriel, Sainte-Marie, QC G6E 3A8",
             "phoneNumber": "(418) 555-0411",
             "websiteURL": "www.fermeduruisseau.ca",
-            "imageFile": "https://createursdesaveurs.com/wp-content/uploads/2024/12/840-x674-1024x1024.png",
+            "imageFile": "https://josuezenif.github.io/wdd231/chamber/images/ferme.jpg",
             "membershipLevel": 1,
             "additionalInfo": "Family-owned dairy farm producing organic milk"
         },
@@ -41,7 +41,7 @@
             "address": "312 Avenue Marguerite-Bourgeoys, Sainte-Marie, QC G6E 2X1",
             "phoneNumber": "(418) 555-0624",
             "websiteURL": "www.cafepontrouge.ca",
-            "imageFile": "https://createursdesaveurs.com/wp-content/uploads/2024/12/840-x674-840-x-460-px-840-x-622-px-840-x-622-px-11.png",
+            "imageFile": "https://josuezenif.github.io/wdd231/chamber/images/cafe.jpg",
             "membershipLevel": 1,
             "additionalInfo": "Local café known for pastries and student-friendly workspace"
         },

@@ -32,24 +32,48 @@ const displayCompanyDetails = (companies) => {
         const image = document.createElement('img');
         const address = document.createElement('p');
         const phoneNumber = document.createElement('p');
+        const link = document.createElement('a');
 
         companyName.textContent = `${company.name}`;
         image.setAttribute("src", `${company.imageFile}`);
         image.setAttribute("alt", "Company image job representation");
         image.setAttribute("loading", "lazy");
-        image.setAttribute("width", "300");
+        image.setAttribute("width", "220");
         image.setAttribute("height", "auto");
 
         address.textContent = `${company.address}`;
         phoneNumber.textContent = `${company.phoneNumber}`;
+        link.setAttribute("href", `${company.websiteURL}`);
+        link.textContent = `More details`;
 
         section.appendChild(companyName);
         section.appendChild(image);
         section.appendChild(address);
         section.appendChild(phoneNumber);
+        section.appendChild(link);
 
         cards.appendChild(section);
     });
 }
 
 getCompanyDetails();
+
+// -------------- TOGGLE BUTTONS LIST GRID ----------------
+const gridbutton = document.querySelector('#grid');
+const listbutton = document.querySelector('#list');
+
+gridbutton.addEventListener('click', () => {
+    gridbutton.classList.toggle('current');
+    listbutton.classList.remove('current');
+    cards.classList.add("grid");
+    cards.classList.remove("list");
+});
+
+listbutton.addEventListener('click', showList);
+
+function showList() {
+    cards.classList.add("list");
+    cards.classList.remove("grid");
+    listbutton.classList.toggle('current');
+    gridbutton.classList.remove('current');
+}
