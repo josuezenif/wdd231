@@ -52,10 +52,10 @@ header span {
     border: 1.5px solid black;
 }
 
-/* .nav li .nav-current {
+.nav li .nav-current {
     background-color: #1e399d;
     border: 1.5px solid #000000;
-} */
+}
 
 /* ----------------- HAMBURGER BUTTON ------------- */
 .hamburger {
