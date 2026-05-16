@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "Beauce Bois Construction Inc.",
+            "address": "245 Rue Notre-Dame S, Sainte-Marie, QC G6E 2V4",
+            "phone-number": "(418) 555-0132",
+            "websiteURL": "www.beauceboisconstruction.ca",
+            "imageFile": "https://www.leclaireurprogres.ca/wp-content/uploads/sites/38/2019/02/apbb-bois2.jpg",
+            "membershipLevel": 3,
+            "additionalInfo": "Specializes in residential framing and eco-friendly wood structures"
+        },
+        {
+            "name": "Transport Vallée Chaudière",
+            "address": "1180 Boulevard Vachon N, Sainte-Marie, QC G6E 1M5",
+            "phone-number": "(418) 555-0278",
+            "websiteURL": "www.transportvallee.ca",
+            "imageFile": "https://transportlfl.com/wp-content/uploads/2022/10/transport-lfl_accueil_hero1.jpg",
+            "membershipLevel": 2,
+            "additionalInfo": "Regional freight and logistics across Quebec"
+        },
+        {
+            "name": "Ferme Laitière du Ruisseau",
+            "address": "67 Rang St-Gabriel, Sainte-Marie, QC G6E 3A8",
+            "phone-number": "(418) 555-0411",
+            "websiteURL": "www.fermeduruisseau.ca",
+            "imageFile": "https://www.laterre.ca/wp-content/uploads/2024/04/AL_Famille-Brault_1.jpg",
+            "membershipLevel": 1,
+            "additionalInfo": "Family-owned dairy farm producing organic milk"
+        },
+        {
+            "name": "TechnoFab Beauce",
+            "address": "890 Route du Président-Kennedy, Sainte-Marie, QC G6E 3B9",
+            "phone-number": "(418) 555-0556",
+            "websiteURL": "www.technofabbeauce.com",
+            "imageFile": "https://i.ytimg.com/vi/M3lkqecDKPQ/maxresdefault.jpg",
+            "membershipLevel": 3,
+            "additionalInfo": "Metal fabrication and CNC machining services"
+        },
+        {
+            "name": "Café du Pont Rouge",
+            "address": "312 Avenue Marguerite-Bourgeoys, Sainte-Marie, QC G6E 2X1",
+            "phone-number": "(418) 555-0624",
+            "websiteURL": "www.cafepontrouge.ca",
+            "imageFile": "https://s3-media0.fl.yelpcdn.com/bphoto/1Rcqr3tu7vvossZ7Vkve6g/1000s.jpg",
+            "membershipLevel": 1,
+            "additionalInfo": "Local café known for pastries and student-friendly workspace"
+        },
+        {
+            "name": "Entretien Menager Baez",
+            "address": "700 Boulevard Lamontagne",
+            "phone-number": "(418) 219 9102",
+            "websiteURL": "https://josuezenif.github.io/wdd131/entretien-menager/entretien-menager.html",
+            "imageFile": "https://josuezenif.github.io/wdd131/entretien-menager/images/limpieza-carro.jpg",
+            "membershipLevel": 2,
+            "additionalInfo": "Commercial cleaning. Apartments, entrances. Weekly services and exterior garden work."
+        },
+        {
+            "name": "Solutions Informatiques BeauceTech",
+            "address": "455 Boulevard Larochelle, Sainte-Marie, QC G6E 1X9",
+            "phone-number": "(418) 555-0789",
+            "websiteURL": "www.beaucetechsolutions.ca",
+            "imageFile": "https://infos.emploipublic.fr/mediatheque_edito/8/3/7/000025738_900x500_c.jpg",
+            "membershipLevel": 2,
+            "additionalInfo": "IT support, networking, and small business cybersecurity"
+        }
+    ]
+}

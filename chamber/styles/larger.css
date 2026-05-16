@@ -1,0 +1,21 @@
+@media screen and (min-width: 38rem) {
+
+    header,
+    main,
+    footer {
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    header {
+        grid-template-columns: 170px auto auto;
+    }
+
+    .navigation {
+        padding-top: 3.8em;
+    }
+}

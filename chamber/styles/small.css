@@ -1,0 +1,55 @@
+/* ---------------- SMALL SCREEN VIEWERS ---------------- */
+@media screen and (max-width: 38rem) {
+    .navigation {
+        display: none;
+    }
+
+    .navigation.open {
+        display: block;
+    }
+
+    .navigation a {
+        display: block;
+        width: 100%;
+        text-align: start;
+    }
+
+    .navigation li {
+        width: 100%;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        align-items: start;
+        padding: 0;
+        row-gap: 12px;
+    }
+
+
+    /* ---------- HEADER ----------- */
+    header {
+        grid-template-columns: 110px auto 44px;
+    }
+
+    header img {
+        width: 100%;
+    }
+
+    header span {
+        font-size: 1.5em;
+        padding: 30px 5px 0 0;
+        text-align: center;
+    }
+
+    /* ----------- FOOTER CONTENT --------- */
+    .personal-info {
+        /* grid-template-rows: 1fr 1fr 1fr; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .last-info {
+        margin-left: 0;
+        padding-left: 20px;
+    }
+}
