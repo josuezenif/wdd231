@@ -112,3 +112,35 @@ header span {
 .last-info li {
     margin-bottom: 5px;
 }
+
+/* ------------------- COMPANY INFORMATION ------------------ */
+.companies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2em;
+    margin: 2em 0 3em 0;
+}
+
+.companies section {
+    border: 1.2px solid gray;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+
+/* -------------------- GRID LIST TOGGLE BUTTONS ---------------- */
+.toggle {
+    text-align: center;
+}
+
+.toggle button {
+    padding: 8px 20px;
+    background-color: #155d6b;
+    transition: background-color 0.3s ease;
+    color: #ffffff;
+}
+
+.toggle button:hover {
+    background-color: rgb(32, 46, 47);
+    cursor: pointer;
+}
