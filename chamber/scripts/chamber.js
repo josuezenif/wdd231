@@ -38,6 +38,7 @@ const displayCompanyDetails = (companies) => {
         image.setAttribute("src", `${company.imageFile}`);
         image.setAttribute("alt", "Company image job representation");
         image.setAttribute("loading", "lazy");
+        image.setAttribute("fetchpriority", "high");
         image.setAttribute("width", "220");
         image.setAttribute("height", "auto");
 
