@@ -182,3 +182,73 @@ header span {
 button.current {
     background-color: #4a4f51;
 }
+
+
+
+/* --------------------------- INDEX HTML CSS -------------------------- */
+.workteam {
+    width: 100%;
+    height: auto;
+}
+
+.join-us {
+    background-color: #155d6b;
+    padding: 15px 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+.join-us p a {
+    color: rgb(0, 204, 255);
+    text-decoration: none;
+}
+
+.join-us p a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+.home-info {
+    display: grid;
+    grid-template-columns: 45% 32% 23%;
+    column-gap: 12px;
+    margin: 0 0 0 12px;
+    max-width: 1100px;
+}
+
+/* ------------ CURRENT WEATHER, EVENT AND FORECAST ------------ */
+.events p {
+    padding: 0 10px 0 7px;
+}
+
+.current-weather,
+.forecast,
+.events {
+    border: 1.3px solid black;
+    /* padding: 0 25px; */
+    margin: 0 0 20px 0;
+    font-size: 1.1em;
+}
+
+.weather-info {
+    padding-left: 10px;
+}
+
+.current-weather h2,
+.events h2,
+.forecast h2 {
+    background-color: rgb(183, 183, 185);
+    padding: 10px 0 10px 7px;
+    margin-top: 0;
+}
+
+.first-day,
+.second-day,
+.third-day {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    column-gap: 5px;
+    padding-left: 10px;
+}

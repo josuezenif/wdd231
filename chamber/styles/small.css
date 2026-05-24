@@ -81,4 +81,28 @@
     h1 {
         margin-left: 10px;
     }
+
+    /* ----------------------------- INDEX HTML CSS ------------------------ */
+    .workteam {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .join-us {
+        width: 100%;
+        padding: 15px 0;
+        font-size: 1.15em;
+        margin: 0;
+    }
+
+    .home-info {
+        display: flex;
+        flex-direction: column;
+        margin: 0 3px;
+    }
+
+    .events p {
+        padding: 0 3px 0 7px;
+    }
 }

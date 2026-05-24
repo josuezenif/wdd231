@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> <!-------------------- HEAD INFORMATION ----------------------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Nouvelle-Beace Chamber of Commerce</title>
+
+    <meta name="author" content="Josue Zenif Baez Gomez">
+    <meta name="description"
+        content="Home Page of the Chamber of Commerce in Nouvelle-Beace, Quebec Canada. Users land in this page and are welcomed">
+    <meta property="og:title" content="La Nouvelle-Beace Chamber of Commerce">
+    <meta property="og:description"
+        content="Chamber of Commerce in the region of Nouvelle-Beace, Quebec Canada. Find the perfect job you!">
+    <meta property="og:image" content="https://josuezenif.github.io/wdd231/chamber/images/chamber.jpg">
+
+    <meta property="og:url" content="https://josuezenif.github.io/wdd231/chamber/index.html">
+
+
+    <!---------------------- STYLESHEET, SCRIPTS AND ICON ---------------------->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
+    <link rel="icon" href="images/favicon-logo.png">
+
+
+    <!--------------FONT FAMILY------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/beauce-icon.jpg" alt="Home logo" width="512" height="512">
+        <span>La Nouvelle-Beauce</span>
+        <button id="ham-button" class="hamburger"></button>
+
+        <nav id="nav-bar" class="navigation">
+            <ul class="nav">
+                <li><a href="chamber.html" class="nav-current">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <img class="workteam" src="images/team.jpg" alt="Team of workers from multiple jobs" width="1280" height="624">
+        <div class="join-us">
+            <p>Want to be part of a thrilling work team? <a href="join.html">Join us</a> today!</p>
+        </div>
+
+        <h1>Home</h1>
+
+        <section class="home-info">
+            <div class="events">
+                <h2>Events</h2>
+                <p>Nothing planned for now! Check back later for updated and new upcoming events!</p>
+            </div>
+
+            <figure class="current-weather">
+                <h2>Current Weather</h2>
+                <div class="weather-info">
+                    <img id="weather-icon" src="" alt="">
+                    <p>Temperature: <strong><span id="temperature"></span></strong></p>
+                    <p>Feels like: <strong><span id="feels-like"></span></strong></p>
+                    <figcaption id="weather-caption"></figcaption>
+                    <p>Sunrise: <span id="sunrise"></span></p>
+                    <p>Sunset: <span id="sunset"></span></p>
+
+                </div>
+            </figure>
+
+            <div class="forecast">
+
+                <h2>Weather Forecast</h2>
+
+                <div class="first-day">
+                    <p id="first"></p>
+                    <strong><span id="day1"></span></strong>
+                </div>
+
+                <div class="second-day">
+                    <p id="second"></p>
+                    <strong><span id="day2"></span></strong>
+                </div>
+
+                <div class="third-day">
+                    <p id="third"></p>
+                    <strong><span id="day3"></span></strong>
+                </div>
+            </div>
+        </section>
+
+        <section id="spotlight" class="spotlight"></section>
+
+
+    </main>
+
+    <footer>
+        <section class="personal-info">
+
+            <ul class="personal-list">
+                <li><strong>La Nouvelle-Beauce</strong></li>
+                <li>700 Boulevard Lamontagne</li>
+                <li>Sainte-Marie, Quebec Canada</li>
+                <li>info@nouvelle-beauce.com</li>
+                <li>(418) 309-2212</li>
+            </ul>
+
+            <div class="social-media">
+                <a href="https://github.com/josuezenif"><img src="images/github.svg" alt="Github icon" width="512"
+                        height="512"></a>
+
+                <a href="https://www.linkedin.com/in/josue-zenif-baez-gomez-2b7007385/"><img src="images/linkedin.svg"
+                        alt="LinkedIn icon" width="512" height="512"></a>
+
+                <a href="https://www.facebook.com/josuezenif.baez"><img src="images/facebook.svg" alt="Facebook icon"
+                        width="512" height="512"></a>
+            </div>
+
+            <ul class="last-info">
+                <li>WDD231 Class Project</li>
+                <li>Josue Zenif Baez Gomez</li>
+                <li>©️ <span id="current-year"></span> | La Nouvelle-Beauce Chamber of Commerce</li>
+                <li><span id="last-modified"></span></li>
+
+            </ul>
+
+        </section>
+    </footer>
+
+</body>
+
+</html>
