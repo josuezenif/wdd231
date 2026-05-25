@@ -37,15 +37,15 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="index-body">
     <header>
         <img src="images/beauce-icon.jpg" alt="Home logo" width="512" height="512">
         <span>La Nouvelle-Beauce</span>
-        <button id="ham-button" class="hamburger"></button>
+        <button id="ham-button" class="hamburger" aria-label="Open menu"></button>
 
         <nav id="nav-bar" class="navigation">
             <ul class="nav">
-                <li><a href="chamber.html" class="nav-current">Home</a></li>
+                <li><a href="index.html" class="nav-current">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
@@ -55,12 +55,13 @@
     </header>
 
     <main>
-        <img class="workteam" src="images/team.jpg" alt="Team of workers from multiple jobs" width="1280" height="624">
+        <img class="workteam" src="images/team.jpg" alt="Team of workers from multiple jobs" width="1280" height="624"
+            loading="lazy" fetchpriority="high">
         <div class="join-us">
             <p>Want to be part of a thrilling work team? <a href="join.html">Join us</a> today!</p>
         </div>
 
-        <h1>Home</h1>
+        <h1 class="home">Home</h1>
 
         <section class="home-info">
             <div class="events">
@@ -102,6 +103,9 @@
             </div>
         </section>
 
+        <h2 class="spotlight-h2">
+            Spotlight Companies
+        </h2>
         <section id="spotlight" class="spotlight"></section>
 
 

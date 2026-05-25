@@ -26,9 +26,9 @@ async function apiFetch() {
 }
 
 function displayWeatherResults(data) {
-    weatherIcon.setAttribute('src', `https://openweathermap.org/img/w/${data.weather[0].icon}.png`);
+    weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`);
     weatherIcon.setAttribute('alt', `${data.weather[0].description}`);
-    weatherIcon.setAttribute('width', '85');
+    weatherIcon.setAttribute('width', '50');
     weatherIcon.setAttribute('height', 'auto');
 
     temp.innerHTML = `${data.main.temp}&deg;C`;
@@ -126,3 +126,70 @@ function displayForecastResults(info) {
 }
 
 apiFetch2();
+
+// ------------- FETCHING AND GETTING COMPANIES --------------
+const membersUrl = "https://josuezenif.github.io/wdd231/chamber/data/members.json";
+const spotlight = document.querySelector('#spotlight');
+
+async function getCompanyInfo() {
+    try {
+        const response = await fetch(membersUrl);
+        const data = await response.json();            // data.companies is the array
+
+        // SELECT 3 RANDOM COMPANIES
+        const filtered = data.companies.filter((company) => company.membershipLevel == 2 || company.membershipLevel == 3);
+        const shuffled = filtered.sort(() => Math.random() - 0.5);
+        const randomCompanies = shuffled.slice(0, 3);
+
+        return randomCompanies; //array
+    }
+
+    catch (error) {
+        console.log('Error:', error);
+    }
+}
+
+async function displayCompanyInfo() {
+    const companies = await getCompanyInfo();
+
+    companies.forEach(company => {
+        const div = document.createElement('div');
+        const name = document.createElement('h2');
+        const img = document.createElement('img');
+        const phone = document.createElement('p')
+        const address = document.createElement('p');
+        const website = document.createElement('a');
+        const membership = document.createElement('p');
+
+        name.textContent = `${company.name}`;
+        img.setAttribute('src', `${company.imageFile}`);
+        img.setAttribute('alt', 'Company logo image');
+        img.setAttribute("loading", "lazy");
+        img.setAttribute("fetchpriority", "high");
+        img.setAttribute('width', '200');
+        img.setAttribute('height', 'auto');
+
+        phone.textContent = `${company.phoneNumber}`;
+        address.textContent = `${company.address}`;
+        website.setAttribute('href', `${company.websiteURL}`);
+        website.textContent = `More details!`;
+
+        if (company.membershipLevel == 2) {
+            membership.textContent = `Membership Level: Silver`;
+        }
+
+        else if (company.membershipLevel == 3) {
+            membership.textContent = `Membership Level: Gold`;
+        }
+
+        div.appendChild(name);
+        div.appendChild(img);
+        div.appendChild(phone);
+        div.appendChild(address);
+        div.appendChild(website);
+        div.appendChild(membership);
+
+        spotlight.appendChild(div);
+    });
+}
+displayCompanyInfo();

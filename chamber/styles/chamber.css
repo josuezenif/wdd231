@@ -186,6 +186,11 @@ button.current {
 
 
 /* --------------------------- INDEX HTML CSS -------------------------- */
+.home {
+    border-bottom: 2.5px solid rgb(7, 65, 99);
+    width: 2.8em;
+}
+
 .workteam {
     width: 100%;
     height: auto;
@@ -193,15 +198,14 @@ button.current {
 
 .join-us {
     background-color: #155d6b;
-    padding: 15px 0;
+    padding: 15px 20px;
     text-align: center;
     color: #ffffff;
     font-size: 1.2em;
 }
 
 .join-us p a {
-    color: rgb(0, 204, 255);
-    text-decoration: none;
+    color: #eafffc;
 }
 
 .join-us p a:hover {
@@ -226,7 +230,6 @@ button.current {
 .forecast,
 .events {
     border: 1.3px solid black;
-    /* padding: 0 25px; */
     margin: 0 0 20px 0;
     font-size: 1.1em;
 }
@@ -251,4 +254,24 @@ button.current {
     align-items: center;
     column-gap: 5px;
     padding-left: 10px;
+}
+
+/* -------------------------- SPOTLIGHT COMPANIES --------------------- */
+.spotlight {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1.5em 0;
+    column-gap: 10px;
+}
+
+.spotlight div {
+    border: 1.3px solid gray;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+    margin: 0 10px;
+}
+
+.spotlight-h2 {
+    border-bottom: 2.5px solid rgb(7, 65, 99);
+    width: 9.7em;
 }
