@@ -26,10 +26,12 @@ async function apiFetch() {
 }
 
 function displayWeatherResults(data) {
-    weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`);
-    weatherIcon.setAttribute('alt', `${data.weather[0].description}`);
-    weatherIcon.setAttribute('width', '50');
-    weatherIcon.setAttribute('height', 'auto');
+    const icon = document.createElement('img');
+    icon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`);
+    icon.setAttribute('alt', `${data.weather[0].description}`);
+    icon.setAttribute('width', '50');
+    icon.setAttribute('height', 'auto');
+    weatherIcon.appendChild(icon);
 
     temp.innerHTML = `${data.main.temp}&deg;C`;
     feelsLike.textContent = `${data.main.feels_like}`;
