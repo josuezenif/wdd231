@@ -33,8 +33,10 @@ function displayWeatherResults(data) {
     icon.setAttribute('height', 'auto');
     weatherIcon.appendChild(icon);
 
-    temp.innerHTML = `${data.main.temp}&deg;C`;
-    feelsLike.textContent = `${data.main.feels_like}`;
+    const roundedTemp = data.main.temp
+    temp.innerHTML = `${Math.round(roundedTemp)}&deg;C`;
+
+    feelsLike.innerHTML = `${Math.round(data.main.feels_like)}&deg;C`;
     caption.textContent = `${data.weather[0].description}`;
 
     // ------------------- SETTING UP VARIABLE FOR TIME -------------------
@@ -45,12 +47,12 @@ function displayWeatherResults(data) {
 
     //  --------------- CONVERTING NUMBER TO TIME ------------------
     const sunriseTime = riseTime.toLocaleTimeString('en-US', {
-        hour: '2-digit',
+        hour: 'numeric',
         minute: '2-digit',
     });
 
     const sunsetTime = setTime.toLocaleTimeString('en-US', {
-        hour: '2-digit',
+        hour: 'numeric',
         minute: '2-digit',
     });
 
@@ -118,13 +120,13 @@ function displayForecastResults(info) {
 
 
     firstDay.textContent = firstDate + `: `;
-    day1.innerHTML = `${info.list[3].main.temp}&deg;C`;
+    day1.innerHTML = `${Math.round(info.list[3].main.temp)}&deg;C`;
 
     secondDay.textContent = secondDate + `: `;
-    day2.innerHTML = `${info.list[11].main.temp}&deg;C`;
+    day2.innerHTML = `${Math.round(info.list[11].main.temp)}&deg;C`;
 
     thirdDay.textContent = thirdDate + `: `;
-    day3.innerHTML = `${info.list[19].main.temp}&deg;C`;
+    day3.innerHTML = `${Math.round(info.list[19].main.temp)}&deg;C`;
 }
 
 apiFetch2();
