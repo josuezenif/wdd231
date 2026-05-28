@@ -93,23 +93,26 @@ function displayCourses(list) {
             li.classList.add('complete');
         }
         courseList.appendChild(li);
+
+        // DISPLAYING COURSE CONTENT
+        li.addEventListener('click', () => {
+            displayCourseInfo(course);
+        })
     });
 }
+
+displayCourses(courses);
 
 // ----------- DISPLAYING THE NUMBER OF CREDITS -----------
 const credits = document.querySelector('#credits');
 
 function sumCredits(list) {
-    // credits.innerHTML = "";
-    // let number = 0;
-    // list.forEach(course => {
-    //     number = course.credits + number;
-    // });
     const number = list.reduce((total, course) => {
         return total + course.credits
     }, 0);
     credits.textContent = `${number}`;
 }
+sumCredits(courses)
 
 
 // ----------- ADDING CLICKING BUTTONS -------------
@@ -142,3 +145,28 @@ wddButton.addEventListener('click', () => {
     const dif = courses.filter(course => course.subject === "WDD");
     sumCredits(dif);
 });
+
+// -------------------------- DISPLAYING DIALOG COURSE INFO ------------------------------
+const modal = document.querySelector('#course-details');
+
+function displayCourseInfo(course) {
+    modal.innerHTML = ''; // BORRA TODO EL INNER HTML
+    modal.innerHTML = `
+    <button id="close">𝗫</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Description:</strong> ${course.description}</p>
+    <p><strong>Certificate:</strong> ${course.certificate}</p>
+    <p><strong>Technology Stack:</strong> ${course.technology}</p>
+    `;
+
+    modal.showModal();
+
+    // CLOSING MODAL COURSE INFO
+    const closeModal = document.querySelector('#close'); // SELECCIONAR DESPUES DE BORRAR (LINEA 157)
+
+    closeModal.addEventListener('click', () => {
+        modal.close();
+    });
+}
