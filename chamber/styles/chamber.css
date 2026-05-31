@@ -396,6 +396,16 @@ select {
 /* --------------------- DIALOG CSS -------------- */
 dialog {
     width: 45em;
+    transform: translateY(-50px);
+    animation: fadeIn .5s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 dialog button {
