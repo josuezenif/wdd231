@@ -40,7 +40,7 @@
 
 <body>
     <header>
-        <img src="images/beauce-icon.jpg" alt="Home logo" width="512" height="512">
+        <img src="images/beauce-icon.jpg" alt="Home logo" width="512" height="512" loading="lazy" fetchpriority="high">
         <span>La Nouvelle-Beauce</span>
         <button id="ham-button" class="hamburger" aria-label="Open menu"></button>
 
@@ -65,7 +65,7 @@
                     <label>Last Name <input type="text" name="last" title="last-name" required
                             autocomplete="family-name"></label>
                     <label>Organizational Title <input type="text" name="organization" title="organizational-title"
-                            autocomplete="organization-title" pattern="alpha"></label>
+                            autocomplete="organization-title"></label>
                     <label>Email Address <input type="text" name="email" title="email-address" required
                             autocomplete="email" placeholder="myname@gmail.com"></label>
                     <label>Phone number <input type="tel" name="telephone" title="phone-number" required
@@ -87,7 +87,7 @@
                             title="business-description"></textarea></label>
 
                     <!-- TIMESTAMP -->
-                    <label><input type="hidden" name="timestamp" id="stamp"></label>
+                    <label id="stamp"><input type="hidden" name="timestamp"></label>
 
                     <input type="submit" name="submission" value="Join Now!">
                 </form>
