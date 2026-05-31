@@ -280,3 +280,132 @@ button.current {
     border-bottom: 2.5px solid rgb(7, 65, 99);
     width: 9.7em;
 }
+
+/* --------------------------------------- JOIN PAGE CSS ------------------------------------- */
+.form {
+    margin: 1em 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    max-width: 90%;
+}
+
+.form label {
+    display: flex;
+    flex-direction: column;
+    color: #2c3789;
+    gap: 3px;
+}
+
+.form input,
+select {
+    padding: 4px;
+    border: 1.3px solid black;
+    border-radius: 0.2rem;
+}
+
+.form input:required {
+    border-left: 5px solid red;
+}
+
+.form input:required:valid {
+    border-left: 5px solid green;
+}
+
+.form textarea {
+    height: 8em;
+    width: 100%;
+}
+
+.form input[type="submit"] {
+    padding: 10px;
+    background-color: #25326a;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.form input[type="submit"]:hover {
+    background-color: rgb(40, 79, 148);
+    cursor: pointer;
+}
+
+.join-main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.memberships {
+    display: block;
+    align-items: center;
+}
+
+.memberships h2 {
+    margin: 21px 0;
+    font-size: 2em;
+}
+
+.memberships section {
+    border: 1.5px solid black;
+    margin: 3em 0;
+    text-align: center;
+    padding: 1em 0 2em 0;
+    border-radius: 0.3em;
+}
+
+.memberships section button {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(89, 89, 89);
+    border-radius: 0.2em;
+    padding: 3.5px;
+    background-color: rgb(237, 237, 237);
+    transition: background-color 0.3s ease;
+}
+
+.memberships section button:hover {
+    background-color: #d3d3d3;
+    cursor: pointer;
+}
+
+.np-member {
+    box-shadow: 0 0 0.7em rgb(137, 137, 137);
+}
+
+.bronze-member {
+    box-shadow: 0 0 0.7em rgb(165, 106, 18);
+}
+
+.silver-member {
+    box-shadow: 0 0 0.7em rgb(69, 157, 144);
+}
+
+.gold-member {
+    box-shadow: 0 0 0.7em rgb(200, 165, 50);
+}
+
+/* --------------------- DIALOG CSS -------------- */
+dialog {
+    width: 45em;
+}
+
+dialog button {
+    width: 2em;
+    height: 2em;
+    font-size: 20px;
+    padding: 0;
+}
+
+dialog button:hover {
+    cursor: pointer;
+}
+
+dialog h2 {
+    background-color: #25326a;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 30%);
+}

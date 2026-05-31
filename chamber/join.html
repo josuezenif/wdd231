@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-------------------- HEAD INFORMATION ----------------------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Nouvelle-Beace Chamber of Commerce</title>
+
+    <meta name="author" content="Josue Zenif Baez Gomez">
+    <meta name="description"
+        content="The join page is a page where the users will be able to join a job they found to their interest and send their messages.">
+    <meta property="og:title" content="Chamber of Commerce Join your job.">
+    <meta property="og:description"
+        content="Chamber of Commerce join the job your found interesting in the region of Nouvelle-Beauce">
+    <meta property="og:image" content="https://josuezenif.github.io/wdd231/chamber/images/join.jpg">
+
+    <meta property="og:url" content="https://josuezenif.github.io/wdd231/chamber/join.html">
+
+
+    <!---------------------- STYLESHEET, SCRIPTS AND ICON ---------------------->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+    <link rel="icon" href="images/favicon-logo.png">
+
+
+    <!--------------FONT FAMILY------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/beauce-icon.jpg" alt="Home logo" width="512" height="512">
+        <span>La Nouvelle-Beauce</span>
+        <button id="ham-button" class="hamburger" aria-label="Open menu"></button>
+
+        <nav id="nav-bar" class="navigation">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="nav-current">Join</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="join-main">
+            <div>
+                <h1>Membership Application From</h1>
+                <form method="get" action="thankyou.html" class="form">
+                    <label>First Name <input type="text" name="first" title="first-name" required
+                            autocomplete="given-name"></label>
+                    <label>Last Name <input type="text" name="last" title="last-name" required
+                            autocomplete="family-name"></label>
+                    <label>Organizational Title <input type="text" name="organization" title="organizational-title"
+                            autocomplete="organization-title" pattern="alpha"></label>
+                    <label>Email Address <input type="text" name="email" title="email-address" required
+                            autocomplete="email" placeholder="myname@gmail.com"></label>
+                    <label>Phone number <input type="tel" name="telephone" title="phone-number" required
+                            autocomplete="tel"></label>
+                    <label>Business/Organization name <input type="text" name="business" title="business-name" required
+                            autocomplete="organization"></label>
+
+                    <label>Membership level
+                        <select name="membership">
+                            <option value="select">Please select</option>
+                            <option value="NP-membership">NP-membership (non-profit and no fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>Business description <textarea name="description"
+                            title="business-description"></textarea></label>
+
+                    <!-- TIMESTAMP -->
+                    <label><input type="hidden" name="timestamp" id="stamp"></label>
+
+                    <input type="submit" name="submission" value="Join Now!">
+                </form>
+            </div>
+
+            <div class="memberships">
+                <h2>Membership Levels</h2>
+                <section class="np-member">
+                    <h3>New Profile Membership</h3>
+                    <button id="new-profile" aria-label="New profile information">More information</button>
+                </section>
+
+                <section class="bronze-member">
+                    <h3>Bronze Membership</h3>
+                    <button id="bronze-member" aria-label="Bronze member information">More Information</button>
+                </section>
+
+                <section class="silver-member">
+                    <h3>Silver Membership</h3>
+                    <button id="silver-member" aria-label="Silver member information">More Information</button>
+                </section>
+
+                <section class="gold-member">
+                    <h3>Gold Membership</h3>
+                    <button id="gold-member" aria-label="Gold member information">More Information</button>
+                </section>
+            </div>
+        </div>
+        <dialog id="membership-info">
+            <button id="close" aria-label="Close dialog">𝘅</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <section class="personal-info">
+
+            <ul class="personal-list">
+                <li><strong>La Nouvelle-Beauce</strong></li>
+                <li>700 Boulevard Lamontagne</li>
+                <li>Sainte-Marie, Quebec Canada</li>
+                <li>info@nouvelle-beauce.com</li>
+                <li>(418) 309-2212</li>
+            </ul>
+
+            <div class="social-media">
+                <a href="https://github.com/josuezenif"><img src="images/github.svg" alt="Github icon" width="512"
+                        height="512"></a>
+
+                <a href="https://www.linkedin.com/in/josue-zenif-baez-gomez-2b7007385/"><img src="images/linkedin.svg"
+                        alt="LinkedIn icon" width="512" height="512"></a>
+
+                <a href="https://www.facebook.com/josuezenif.baez"><img src="images/facebook.svg" alt="Facebook icon"
+                        width="512" height="512"></a>
+            </div>
+
+            <ul class="last-info">
+                <li>WDD231 Class Project</li>
+                <li>Josue Zenif Baez Gomez</li>
+                <li>©️ <span id="current-year"></span> | La Nouvelle-Beauce Chamber of Commerce</li>
+                <li><span id="last-modified"></span></li>
+
+            </ul>
+
+        </section>
+    </footer>
+
+</body>
+
+</html>
