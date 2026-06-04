@@ -1,0 +1,28 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Color scheme */
+h1,
+footer {
+    background-color: rgb(53, 80, 120);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h2 {
+    background-color: rgb(238, 197, 64);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.wireframe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
