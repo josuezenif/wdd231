@@ -446,3 +446,29 @@ dialog::backdrop {
     text-align: center;
     padding: 20px 0;
 }
+
+/* ------------------------------ DISCOVER PAGE SITE CSS ------------------------- */
+
+/*     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+*/
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2em;
+}
+
+.cards div {
+    border: 1.2px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.cards div button {
+    width: 150px;
+    padding: 3px 0;
+}
