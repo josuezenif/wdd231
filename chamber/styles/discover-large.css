@@ -1,0 +1,36 @@
+@media screen and (min-width: 64rem) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    .cards div figure {
+        display: block;
+        padding: 10px 0 0 10px;
+    }
+
+    .cards div {
+        column-gap: 10px;
+    }
+
+    .cards div figure:hover {
+        opacity: 0;
+        transform: translateX(0);
+        animation: pulse 1s ease infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}

@@ -19,6 +19,7 @@ items.forEach(item => {
     image.setAttribute('alt', 'Event in La Nouvelle-Beauce');
     image.setAttribute('width', '300');
     image.setAttribute('height', 'auto');
+    image.setAttribute('loading', 'lazy');
     fig.appendChild(image);
 
     address.textContent = item.address;
@@ -33,4 +34,43 @@ items.forEach(item => {
     div.appendChild(button);
 
     cards.appendChild(div);
-})
+});
+
+// --------------- DISPLAYING LAST VISIT ------------
+const visitMessage = document.querySelector('#lastVisit');
+
+function displayVisitMessage() {
+
+    const lastVisit = Number(localStorage.getItem("discoverLastVisit"));
+
+    const today = Date.now();
+
+    const oneDay = 1000 * 60 * 60 * 24;
+
+
+    if (!lastVisit) {
+
+        visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+    }
+
+    else {
+
+        const daysBetween = Math.floor((today - lastVisit) / oneDay);
+
+        if (daysBetween < 1) {
+            visitMessage.textContent = "Back so soon! Awesome!";
+        }
+
+        else if (daysBetween === 1) {
+            visitMessage.textContent = "You last visited 1 day ago.";
+        }
+
+        else {
+            visitMessage.textContent = `You last visited ${daysBetween} days ago.`;
+        }
+    }
+
+    localStorage.setItem("discoverLastVisit", Date.now());
+}
+
+displayVisitMessage();

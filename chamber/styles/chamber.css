@@ -42,7 +42,7 @@ header span {
     transition: background-color 0.3s ease;
     background-color: rgb(23, 45, 80);
     padding: 10px 20px;
-    border: 1.5px solid rgb(86, 101, 59);
+    border: 1.5px solid rgb(34, 62, 39);
 }
 
 .nav li a:hover {
@@ -448,27 +448,74 @@ dialog::backdrop {
 }
 
 /* ------------------------------ DISCOVER PAGE SITE CSS ------------------------- */
-
-/*     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-*/
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2em;
-}
-
 .cards div {
     border: 1.2px solid black;
+    border-radius: 0.6em;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding: 10px;
+    padding: 0 0 10px 7px;
+    background-color: #eaeaea;
+
+    display: grid;
+    grid-template-areas:
+        "name"
+        "image"
+        "address"
+        "desc"
+    ;
+
+    margin: 0 2px 15px;
+    overflow: hidden;
+}
+
+.cards div h2 {
+    grid-area: name;
+}
+
+.cards div figure {
+    grid-area: image;
+    margin: 0 auto 15px 0;
+}
+
+.cards div address {
+    grid-area: address;
+}
+
+.cards div p {
+    grid-area: desc;
 }
 
 .cards div button {
+    display: block;
     width: 150px;
-    padding: 3px 0;
+    padding: 5px 0;
+    border: 1.2px solid black;
+    border-radius: 0.2em;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cards div button:hover {
+    cursor: pointer;
+    background-color: #e4e4e4;
+}
+
+/* LAST VISITED */
+#lastVisit {
+    font-size: 1.2em;
+    font-weight: 430;
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 2px solid #1e399d;
+    width: 230px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.cards {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: fadeUp 1s ease-out forwards;
 }

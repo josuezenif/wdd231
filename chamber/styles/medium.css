@@ -1,0 +1,42 @@
+@media screen and (min-width: 38rem) {
+    .cards div {
+        grid-template-areas:
+            "image name"
+            "image address"
+            "image desc"
+        ;
+    }
+
+    .cards div figure img {
+        border-radius: 0.3em;
+    }
+
+    .cards div {
+        padding-left: 0;
+    }
+
+    .cards div button {
+        margin: 0 auto;
+        grid-column: 2/3;
+    }
+
+    .cards div figure:hover {
+        opacity: 0;
+        transform: translateX(0);
+        animation: pulse 1s ease infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
