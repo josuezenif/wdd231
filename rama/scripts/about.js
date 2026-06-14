@@ -2,9 +2,9 @@ const presidency = [
     {
         name: "Josue Baez Osuna",
         role: "Branch President",
-        img: "https://josuezenif.github.io/wdd231/rama/images/president-baez.jpg",
+        img: "https://josuezenif.github.io/wdd231/rama/images/baez.jpg",
         alt: "Image of the president of the branch",
-        width: "960"
+        width: "1458"
     },
     {
         name: "Oscar Lopez",
@@ -22,10 +22,11 @@ const presidency = [
     }
 ];
 
-const div = document.createElement('div');
 const section = document.querySelector('#presidency');
 
 presidency.forEach(person => {
+    const div = document.createElement('div');
+
     div.innerHTML = `
         <img src="${person.img}" alt="${person.alt}" width="${person.width}" height="auto" loading="lazy">
         <h3>${person.name}</h3>
