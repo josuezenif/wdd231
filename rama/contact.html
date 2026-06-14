@@ -20,8 +20,7 @@
     <link rel="stylesheet" href="styles/large.css">
 
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/rama.js" defer></script>
-    <script src="scripts/scripture.mjs" type="module"></script>
+    <script src="scripts/contact.js" defer></script>
 
     <link rel="icon" href="images/favicon.jpg">
 </head>
@@ -33,82 +32,42 @@
         <button id="ham-button" class="ham-button" aria-label="menu button"></button>
 
         <nav id="navigation">
-            <a href="index.html" class="current-nav">Home</a>
+            <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="schedule.html">Schedule</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.html" class="current-nav">Contact Us</a>
         </nav>
     </header>
 
     <main>
-        <h1>Home</h1>
-        <div class="hero">
-            <img src="images/foto-rama.jpg" alt="Ward saint laurent last photo as group" class="foto-rama"
-                loading="lazy">
-            <h2 class="title">Saint-Larent Spanish Branch</h2>
-        </div>
+        <h1>Contact Us!</h1>
+        <form method="get" action="thankyou.html" class="form">
+            <label>First Name <input type="text" name="first" title="first-name" required
+                    autocomplete="given-name"></label>
+            <label>Last Name <input type="text" name="last" title="last-name" required
+                    autocomplete="family-name"></label>
+            <label>Email Address <input type="email" name="email" title="email-address" required autocomplete="email"
+                    placeholder="myname@gmail.com"></label>
+            <label>Phone number <input type="tel" name="telephone" title="phone-number" required
+                    autocomplete="tel"></label>
 
-        <section class="about-us">
-            <h3>A little About Us</h3>
-            <p>
-                We are an LDS branch named Saint-Larent located in the City of Quebec Canada, District of Quebec. We are
-                a spanish speaking
-                branch and welcome all visitors who speak spanish learn about our beliefs and develop faith and love
-                for our Heavenly Father and His Son Jesus-Christ. We invite you wherever you may be to come and
-                experience the love and joy the Gospel of Jesus-Christ brings ♡. We welcome you with wide open arms,
-                just like our Heveanly Father welcomes you with His loving arms.
-            </p>
-            <p>
-                Learn more <a href="about.html">About us</a> and our <a href="schedule.html">Weekly Sacrament
-                    Meetings</a>
-            </p>
+            <label>Reason for message
+                <select name="reason">
+                    <option value="select">Please select</option>
+                    <option value="new-member">New member/arrival to Quebec</option>
+                    <option value="meeting">Interview (with branch president)</option>
+                    <option value="recommendation">Temple recommendation</option>
+                    <option value="other">Other (specify in message text area)</option>
+                </select>
+            </label>
 
-        </section>
+            <label>Type in your message <textarea name="description" title="business-description"></textarea></label>
 
-        <section class="weather">
+            <!-- TIMESTAMP -->
+            <label id="stamp"><input name="timestamp" id="timestamp"></label>
 
-            <div class="current">
-                <h3>
-                    Current Weather
-                </h3>
-
-                <div id="current-weather"></div>
-            </div>
-
-            <div class="forecast">
-                <h3>Weather forecast</h3>
-
-                <div id="forecast" class="weather-forecast"></div>
-            </div>
-
-        </section>
-
-        <section class="daily-scripture">
-            <h3>Scripture of the day!</h3>
-
-            <div class="script-info">
-                <h2 id="reference"></h2>
-                <p id="text"></p>
-            </div>
-        </section>
-
-        <section class="common-questions">
-            <h3>Most common questions</h3>
-            <ul class="questions">
-                <li class="sn">What is the trinity? <button id="answer1"
-                        aria-label="answer for question 1">Answer</button></li>
-                <li class="sn">Do you adore saints? <button id="answer2"
-                        aria-label="answer for question 2">Answer</button></li>
-                <li class="sn">Does God have a body of flesh and bones? <button id="answer3"
-                        aria-label="answer for question 3">Answer</button></li>
-                <li class="sn">Are you christians? <button id="answer4"
-                        aria-label="answer for question 4">Answer</button></li>
-            </ul>
-        </section>
-
-        <dialog id="respuestas">
-            <button id="close" aria-label="close dialog button"></button>
-        </dialog>
+            <input type="submit" name="submission" value="Get in Contact!">
+        </form>
     </main>
 
     <footer>

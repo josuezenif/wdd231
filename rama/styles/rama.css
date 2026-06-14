@@ -349,3 +349,76 @@ dialog button:hover {
 .last-info li {
     margin-bottom: 5px;
 }
+
+
+
+
+
+/* -------------------------- CONTACT US FORM PAGE ---------------------- */
+
+.form {
+    margin: 1em 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    max-width: 50%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation: slideIn .7s ease-out;
+}
+
+.form label {
+    display: flex;
+    flex-direction: column;
+    color: #2c3789;
+    gap: 3px;
+}
+
+.form input,
+select {
+    padding: 4px;
+    border: 1.3px solid black;
+    border-radius: 0.2rem;
+}
+
+.form input:required {
+    border-left: 5px solid red;
+}
+
+.form input:required:valid {
+    border-left: 5px solid green;
+}
+
+.form textarea {
+    height: 8em;
+    width: 100%;
+}
+
+.form input[type="submit"] {
+    padding: 10px;
+    background-color: #25326a;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.form input[type="submit"]:hover {
+    background-color: rgb(40, 79, 148);
+    cursor: pointer;
+}
+
+.join-main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#results {
+    text-align: center;
+    border: 1.5px solid rgb(20, 63, 123);
+    background-color: rgba(230, 201, 107, 0.682);
+}
+
+#results h2 {
+    border-bottom: 1.5px solid rgb(20, 63, 123);
+    padding: 10px 0;
+    background-color: rgb(230, 189, 114);
+    margin-top: 0;
+}
