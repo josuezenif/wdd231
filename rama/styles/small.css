@@ -1,0 +1,56 @@
+@media screen and (max-width: 38rem) {
+    .ham-button {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #navigation.open {
+        display: block;
+    }
+
+    .weather {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .common-questions,
+    .questions {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sn {
+        display: flex;
+    }
+
+    .personal-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .last-info {
+        margin-left: 20px;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .hero h2 {
+        top: 10px;
+        font-size: 1.3em;
+    }
+
+    .about-us,
+    .daily-scripture {
+        width: 100%;
+    }
+
+    dialog {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
