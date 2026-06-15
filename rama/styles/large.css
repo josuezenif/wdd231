@@ -6,4 +6,8 @@
     .ham-button {
         display: none;
     }
+
+    .title {
+        max-width: 100%;
+    }
 }

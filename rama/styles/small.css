@@ -26,6 +26,14 @@
         display: flex;
     }
 
+    .index-weather {
+        margin: 0 10px;
+    }
+
+    .title {
+        width: 95.3%;
+    }
+
     .personal-info {
         display: flex;
         flex-direction: column;
@@ -49,9 +57,26 @@
         width: 100%;
     }
 
+    .common-questions {
+        margin: 0 10px;
+    }
+
     dialog {
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    /* --------------------------- ABOUT US PAGE ------------------ */
+    .history-images {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1em;
+    }
+
+    .presidency {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1em;
     }
 
     /* ----------- CONTACT US ----------- */

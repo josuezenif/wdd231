@@ -127,10 +127,9 @@ nav a:hover {
     display: block;
     position: absolute;
     background-color: #dfb735ca;
-    /* <------ a revisar */
     text-align: center;
     padding: 15px 0 15px 15px;
-    width: 100%;
+    width: 98.83%;
     top: 25%;
     font-size: 2em;
     margin: 0;
@@ -150,7 +149,6 @@ h3 {
     text-align: center;
     margin: 10px auto;
     border: 1.2px solid rgb(53, 80, 120);
-    /* padding: 0 10px; */
 }
 
 .about-us h3 {
@@ -432,6 +430,45 @@ dialog button:hover {
     background-color: #123666;
     color: white;
     padding: 0 10px;
+}
+
+.pres {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.presidency {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+
+.presidency div img {
+    width: 100%;
+    border-bottom: 1.5px solid #6a6a6a;
+}
+
+.presidency div {
+    border: 1.5px solid #6a6a6a;
+    text-align: center;
+    background-color: rgba(138, 138, 138, 0.46);
+}
+
+.call {
+    background-color: #123666;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 2em auto;
+    font-size: 1.15em;
+}
+
+.call p a {
+    color: rgb(117, 230, 255);
+}
+
+.call p a:hover {
+    color: rgb(183, 77, 183);
 }
 
 

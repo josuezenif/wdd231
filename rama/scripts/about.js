@@ -8,16 +8,16 @@ const presidency = [
     },
     {
         name: "Oscar Lopez",
-        role: "First Counsler",
+        role: "First Counsellor",
         img: "https://josuezenif.github.io/wdd231/rama/images/oscar.jpg",
-        alt: "Image of the first counsler of the branch",
+        alt: "Image of the first counsellor of the branch",
         width: "754"
     },
     {
         name: "Javier Isidro",
-        role: "Second Counsler",
+        role: "Second Counsellor",
         img: "https://josuezenif.github.io/wdd231/rama/images/javier.jpg",
-        alt: "Image of the second counsler of the branch",
+        alt: "Image of the second counsellor of the branch",
         width: "960"
     }
 ];
