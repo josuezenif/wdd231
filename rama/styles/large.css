@@ -10,4 +10,18 @@
     .title {
         max-width: 100%;
     }
+
+    .weather {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .current,
+    .forecast {
+        padding: 0 5em;
+    }
+
+    .history-images {
+        row-gap: 10px;
+    }
 }

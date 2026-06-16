@@ -161,17 +161,19 @@ h3 {
     padding: 10px 0;
 }
 
+.history-images
 /* ---------- WEATHER --------- */
 
 .weather {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 
 .current,
 .forecast {
     border: 1.2px solid black;
-    padding: 0 5em;
+    padding: 0 4em;
     margin: 2em 0;
     background-color: #ecc586;
     border-radius: .4em;
@@ -184,6 +186,7 @@ h3 {
     border-bottom: 1.4px solid #22508b;
     width: 100%;
     font-size: 1.3em;
+    text-align: center;
 }
 
 .current span {
@@ -286,6 +289,7 @@ dialog {
     max-width: 35em;
     text-align: center;
     border: 1.5px solid rgb(27, 72, 140);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     animation: slideIn 0.5s ease-out;
 }
 
@@ -373,6 +377,7 @@ dialog button:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row: 1/3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .history-images img {
@@ -451,7 +456,7 @@ dialog button:hover {
 .presidency div {
     border: 1.5px solid #6a6a6a;
     text-align: center;
-    background-color: rgba(138, 138, 138, 0.46);
+    background-color: rgba(196, 196, 196, 0.46)
 }
 
 .call {
@@ -461,6 +466,7 @@ dialog button:hover {
     padding: 10px;
     margin: 2em auto;
     font-size: 1.15em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .call p a {
@@ -541,4 +547,52 @@ select {
     padding: 10px 0;
     background-color: rgb(230, 189, 114);
     margin-top: 0;
+}
+
+/* ------------------------------- SCHEDULE RAMA PAGE CSS ------------------------ */
+.branches-info h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.branch-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.branch-buttons button {
+    background-color: #22508b;
+    border: 1.5px solid #303e51;
+    padding: 10px 15px;
+    color: white;
+    font-size: 1.05em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.branch-buttons button:hover {
+    cursor: pointer;
+    background-color: #235faf;
+}
+
+#info-branch {
+    margin: 3em auto;
+    padding: 5px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #e0e0e0;
+    border: 1.5px solid gray;
+}
+
+#info-branch div {
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+#info-branch img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 10px solid #cfaf49;
+    border-radius: 0.7em;
 }
