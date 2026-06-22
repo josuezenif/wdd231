@@ -9,6 +9,11 @@
 
     #navigation.open {
         display: block;
+        width: 10rem;
+    }
+
+    nav a {
+        font-size: 1.2em;
     }
 
     .weather {
