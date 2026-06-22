@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rama Saint-Laurent</title>
+    <meta name="author" content="Josue Zenif Baez Gomez">
+    <meta name="description"
+        content="LDS Spanish rama llamada Saint Laurent. Conoce nuestra rama y aprende sobre el Evangelio de nuestro Señor y Salvador Jesucristo">
+    <meta property="og:title" content="Rama Saint-Laurent Quebec, Canada">
+    <meta property="og:description"
+        content="Visita nuestra rama en la ciudad de Quebec, Canada y aprende quienes y somos y lo que hacemos">
+    <meta property="og:image" content="https://josuezenif.github.io/wdd231/rama/images/rama-logo.jpg">
+    <meta property="og:url" content="https://josuezenif.github.io/wdd231/rama/index.html">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <!---------------- LINKS TO CSS, JAVASCRIPT FAVICON ----------------->
+    <link rel="stylesheet" href="styles/rama.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/rama.js" defer></script>
+    <script src="scripts/scripture.mjs" type="module"></script>
+
+    <link rel="icon" href="images/favicon.jpg">
+</head>
+
+<body>
+    <header>
+        <img src="images/rama-logo.jpg" alt="Ward Saint-Laurent Logo" width="1254" height="1254" loading="lazy">
+        <span>Rama Saint-Laurent</span>
+        <button id="ham-button" class="ham-button" aria-label="menu button"></button>
+
+        <nav id="navigation">
+            <a href="principal.html" class="current-nav">Bienvenida</a>
+            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+            <a href="horarios.html">Horarios</a>
+            <a href="contactanos.html">Contáctanos</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>¡Bienvenido!</h1>
+        <div class="hero">
+            <img src="images/foto-rama.jpg" alt="Ward saint laurent last photo as group" class="foto-rama"
+                loading="lazy" fetchpriority="auto">
+            <h2 class="title">Rama Saint-Laurent</h2>
+        </div>
+
+        <section class="about-us">
+            <h3>Un poco sobre nosotros!</h3>
+            <p>
+                Somos una rama SUD llamada Saint-Laurent ubicada en la Ciudad de Quebec, Canadá, Distrito de Quebec.
+                Somos una rama en español y damos la bienvenida a todos los visitantes a aprender
+                sobre nuestras
+                creencias y a desarrollar fe y amor por nuestro Padre Celestial y Su Hijo Jesucristo. Les invitamos,
+                dondequiera que
+                se encuentre, a
+                venir y experimentar el amor y el gozo duradero que trae el Evangelio de Jesucristo ♡. Les damos la
+                bienvenida
+                con los brazos
+                abiertos, tal como nuestro Padre Celestial les recibe con Sus amorosos brazos.
+            </p>
+            <p>
+                Aprenda mas <a href="about.html">Sobre Nosotros</a> y nuestras <a href="schedule.html">Reuniones
+                    Sacramentales!</a>
+            </p>
+
+        </section>
+
+
+        <section class="weather">
+
+            <div class="current">
+                <h3>
+                    Clima Actual
+                </h3>
+
+                <div id="current-weather"></div>
+            </div>
+
+            <div class="forecast">
+                <h3>Clima durante la semana</h3>
+
+                <div id="forecast" class="weather-forecast"></div>
+            </div>
+
+        </section>
+
+
+
+        <section class="daily-scripture">
+            <h3>¡Escritura del Día!</h3>
+
+            <div class="script-info">
+                <h2 id="reference"></h2>
+                <p id="text"></p>
+            </div>
+        </section>
+
+        <section class="common-questions">
+            <h3>¡Preguntas mas comunes!</h3>
+            <ul class="questions">
+                <li class="sn">¿Que es la Trinidad? <button id="answer1"
+                        aria-label="answer for question 1">Respuesta</button></li>
+                <li class="sn">¿Adoran a algún Santo? <button id="answer2"
+                        aria-label="answer for question 2">Respuesta</button></li>
+                <li class="sn">¿Dios tiene un cuerpo? <button id="answer3"
+                        aria-label="answer for question 3">Respuesta</button></li>
+                <li class="sn">¿Son Cristianos! <button id="answer4"
+                        aria-label="answer for question 4">Respuesta</button></li>
+            </ul>
+        </section>
+
+        <dialog id="respuestas">
+            <button id="close" aria-label="close dialog button"></button>
+        </dialog>
+
+    </main>
+
+    <footer>
+        <section class="personal-info">
+
+            <ul class="personal-list">
+                <li><strong>Rama Saint-Laurent</strong></li>
+                <li>6900 Pierre-Bertrand Blvd, Quebec City</li>
+                <li>Quebec City, QC Canada</li>
+                <li>rama-saint-laurent@gmail.com</li>
+                <li>(418) 309-2212</li>
+            </ul>
+
+            <div class="social-media">
+                <a href="https://github.com/josuezenif"><img src="images/github.svg" alt="Github icon" width="512"
+                        height="512" loading="lazy"></a>
+
+                <a href="https://www.linkedin.com/in/josue-zenif-baez-gomez-2b7007385/"><img src="images/linkedin.svg"
+                        alt="LinkedIn icon" width="512" height="512" loading="lazy"></a>
+
+                <a href="https://www.facebook.com/groups/954562875861300/about"><img src="images/facebook.svg"
+                        alt="Facebook icon" width="512" height="512" loading="lazy"></a>
+            </div>
+
+            <ul class="last-info">
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/11?lang=spa&id=p28-p30#p28">Mateo
+                        11:28-30</a>
+                </li>
+                <li>Josue Zenif Baez Gomez</li>
+                <li>©️ <span id="current-year"></span> | Rama LDS Saint-Laurent Distrito de Quebec</li>
+                <li><span id="last-modified"></span></li>
+            </ul>
+
+        </section>
+    </footer>
+
+</body>
+
+</html>

@@ -33,13 +33,13 @@ button4.addEventListener('click', () => {
 function displayFirstBranchInfo() {
     divBranch.innerHTML = "";
     divBranch.innerHTML = `
-        <h2>Saint-Laurent Branch (Spanish)</h2>
+        <h2>Rama Saint-Laurent</h2>
 
         <div>
             <img src="https://josuezenif.github.io/wdd231/rama/images/president-baez.jpg" width="960" height="auto" loading="lazy">
-            <p><strong>President:</strong> Josue Baez Osuna</p>
-            <p><strong>Address:</strong> 6900 Pierre-Bertrand Blvd, Quebec City, Quebec Canada</p>
-            <p><strong>Sacrament Time:</strong> Sunday 9:30 am (Holidays may vary)</p>
+            <p><strong>Presidente:</strong> Josue Baez Osuna</p>
+            <p><strong>Direccion:</strong> 6900 Pierre-Bertrand Blvd, Quebec City, Quebec Canada</p>
+            <p><strong>Hora Sacramental:</strong> Domingo 9:30 am (Horas en Navidad pueden variar)</p>
         </div>
 
     `;
@@ -48,12 +48,12 @@ function displayFirstBranchInfo() {
 function displaySecondBranchInfo() {
     divBranch.innerHTML = "";
     divBranch.innerHTML = `
-        <h2>Quebec Branch (French)</h2>
+        <h2>Rama de Quebec (Frances)</h2>
 
        <div>
-            <p><strong>President:</strong> Maxime Tremblay</p>
-            <p><strong>Address:</strong> 6900 Pierre-Bertrand Blvd, Quebec City, Quebec Canada</p>
-            <p><strong>Sacrament Time:</strong> Sunday 11:30 am (Holidays may vary)</p>
+            <p><strong>Presidente:</strong> Maxime Tremblay</p>
+            <p><strong>Direcció:</strong> 6900 Pierre-Bertrand Blvd, Quebec City, Quebec Canada</p>
+            <p><strong>Hora Sacramental:</strong> Domingo 11:30 am (Horas en Navidad pueden variar)</p>
         </div>
     `;
 }
@@ -61,12 +61,12 @@ function displaySecondBranchInfo() {
 function displayThridBranchInfo() {
     divBranch.innerHTML = "";
     divBranch.innerHTML = `
-        <h2>Lévis Branch (French)</h2>
+        <h2>Rama de Lévis (Frances)</h2>
 
        <div>
-            <p><strong>President:</strong> Jeffrei Moreira</p>
-            <p><strong>Address:</strong> 6900 Pierre-Bertrand Blvd, Quebec City, Quebec Canada</p>
-            <p><strong>Sacrament Time:</strong> Sunday 1:30 pm (Holidays may vary)</p>
+            <p><strong>Presidente:</strong> Jeffrei Moreira</p>
+            <p><strong>Dirección:</strong> 6900 Pierre-Bertrand Blvd, Quebec City, Quebec Canada</p>
+            <p><strong>Hora Sacramental:</strong> Domingo 1:30 pm (Horas en Navidad pueden variar)</p>
         </div>
     `;
 }
@@ -74,12 +74,12 @@ function displayThridBranchInfo() {
 function displayFourthBranchInfo() {
     divBranch.innerHTML = "";
     divBranch.innerHTML = `
-        <h2>Victoriaville Branch (French)</h2>
+        <h2>Rama de Victoriaville (Frances)</h2>
 
        <div>
-            <p><strong>President:</strong> Derick, Lord</p>
-            <p><strong>Address:</strong> 1221 Bd Jutras E, Victoriaville, Quebec Canada</p>
-            <p><strong>Sacrament Time:</strong> Sunday 10:30 am (Holidays may vary)</p>
+            <p><strong>Presidente:</strong> Derick, Lord</p>
+            <p><strong>Dirección:</strong> 1221 Bd Jutras E, Victoriaville, Quebec Canada</p>
+            <p><strong>Hora Sacramental:</strong> Domingo 10:30 am (Horas en Navidad pueden variar)</p>
         </div>
     `;
 }

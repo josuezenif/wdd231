@@ -12,4 +12,4 @@ const lastModified = document.querySelector('#last-modified');
 const today = new Date();
 
 currentyear.textContent = today.getFullYear();
-lastModified.textContent = `Last modified: ${document.lastModified}`;
+lastModified.textContent = `Última Modificación: ${document.lastModified}`;

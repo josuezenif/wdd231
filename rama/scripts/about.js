@@ -1,21 +1,21 @@
 const presidency = [
     {
         name: "Josue Baez Osuna",
-        role: "Branch President",
+        role: "Presidente de Rama",
         img: "https://josuezenif.github.io/wdd231/rama/images/baez.jpg",
         alt: "Image of the president of the branch",
         width: "1458"
     },
     {
         name: "Oscar Lopez",
-        role: "First Counsellor",
+        role: "Primer Consejero",
         img: "https://josuezenif.github.io/wdd231/rama/images/oscar.jpg",
         alt: "Image of the first counsellor of the branch",
         width: "754"
     },
     {
         name: "Javier Isidro",
-        role: "Second Counsellor",
+        role: "Segundo Consejero",
         img: "https://josuezenif.github.io/wdd231/rama/images/javier.jpg",
         alt: "Image of the second counsellor of the branch",
         width: "960"

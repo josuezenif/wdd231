@@ -12,10 +12,10 @@ const time = new Date().toLocaleString('en-US', {
 
 results.innerHTML = `
     <h2>${userInfo.get('first')} ${userInfo.get('last')}</h2>
-    <p>Email: ${userInfo.get('email')}</p>
-    <p>Phone number: ${userInfo.get('telephone')}</p>
-    <p>Reason: ${userInfo.get('reason')}</p>
-    <p>Date: ${time}</p>
-    <p>Your form has been sent!</p>
-    <p>The president will get in contact with you in 2-3 days!</p>
+    <p>Correo: ${userInfo.get('email')}</p>
+    <p>Numero de Telefono: ${userInfo.get('telephone')}</p>
+    <p>Razón: ${userInfo.get('reason')}</p>
+    <p>Fecha: ${time}</p>
+    <p>Tu formulario ha sido enviada!</p>
+    <p>El Presidente se pondra de contacto con usted de 2-3 días!</p>
 `;

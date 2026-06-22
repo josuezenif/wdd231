@@ -1,5 +1,5 @@
 const stamp = document.querySelector('#stamp');
-const currentTime = new Date().toLocaleString('en-US', {
+const currentTime = new Date().toLocaleString('spa-MX', {
     year: "numeric",
     month: "short",
     day: "numeric",

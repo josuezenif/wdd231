@@ -4,7 +4,7 @@
 // ------------------------ WEATHER ------------------------------
 
 const div = document.querySelector('#current-weather');
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=46.813605785497074&lon=-71.20510591374328&&appid=337050a94b3c029e7048916d63f8733f&units=metric';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=46.813605785497074&lon=-71.20510591374328&&appid=337050a94b3c029e7048916d63f8733f&units=metric&lang=es';
 
 async function fetchApi() {
     try {
@@ -43,16 +43,16 @@ function displayWeather(data) {
     temp.innerHTML = `${Math.round(data.main.temp)}&deg;C`;
     temp.classList.add('temp');
     desc.textContent = data.weather[0].description;
-    feels_like.innerHTML = `Feels like: ${Math.round(data.main.feels_like)}&deg;C`;
-    wind.innerHTML = `Wind: ${Math.round(data.wind.speed)}` + ` km/h`;
+    feels_like.innerHTML = `Sensación de: ${Math.round(data.main.feels_like)}&deg;C`;
+    wind.innerHTML = `Viento: ${Math.round(data.wind.speed)}` + ` km/h`;
 
-    sunrise.innerHTML = `Sunrise: ` + `${new Date(data.sys.sunrise * 1000).toLocaleTimeString('en-US', {
+    sunrise.innerHTML = `Amanecer: ` + `${new Date(data.sys.sunrise * 1000).toLocaleTimeString('en-US', {
         hour: 'numeric',
         minute: '2-digit',
     }
     )}`;
 
-    sunset.innerHTML = `Sunset: ` + `${new Date(data.sys.sunset * 1000).toLocaleTimeString('en-US', {
+    sunset.innerHTML = `Atardecer: ` + `${new Date(data.sys.sunset * 1000).toLocaleTimeString('en-US', {
         hour: 'numeric',
         minute: '2-digit',
     }
@@ -75,7 +75,7 @@ fetchApi();
 
 // WEATHER FORECAST
 const forecast = document.querySelector('#forecast');
-const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=46.813605785497074&lon=-71.20510591374328&cnt=20&appid=337050a94b3c029e7048916d63f8733f&units=metric';
+const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=46.813605785497074&lon=-71.20510591374328&cnt=20&appid=337050a94b3c029e7048916d63f8733f&units=metric&lang=es';
 
 async function fetchForecastApi() {
     try {
@@ -101,7 +101,7 @@ async function fetchForecastApi() {
 
 function displayForecast(data) {
     forecast.innerHTML = `
-        <p>- ${new Date(data.list[4].dt_txt).toLocaleDateString('en-US', {
+        <p>- ${new Date(data.list[4].dt_txt).toLocaleDateString('spa-MX', {
         weekday: 'long'
     })}: ${Math.round(data.list[4].main.temp)}&deg;C</p>
     
@@ -109,17 +109,17 @@ function displayForecast(data) {
 
         <p class="bottom">${data.list[4].weather[0].description}</p>
 
-    <p>- ${new Date(data.list[12].dt_txt).toLocaleDateString('en-US', {
+    <p>- ${new Date(data.list[12].dt_txt).toLocaleDateString('spa-MX', {
         weekday: 'long'
     })
-        }: ${Math.round(data.list[12].main.temp)}&deg;C</p >
+        }: ${Math.round(data.list[12].main.temp)}&deg;C</p>
 
                 <img src="https://openweathermap.org/img/wn/${data.list[12].weather[0].icon}@4x.png" alt="Weather icon for the week" width="55" heigth="auto" loading="lazy">
 
         <p class="bottom">${data.list[12].weather[0].description}</p>
 
 
-    <p>- ${new Date(data.list[19].dt_txt).toLocaleDateString('en-US', {
+    <p>- ${new Date(data.list[19].dt_txt).toLocaleDateString('spa-MX', {
             weekday: 'long'
         })}: ${Math.round(data.list[19].main.temp)}&deg;C</p>
         
@@ -141,9 +141,9 @@ function answer1() {
     modal.innerHTML = '';
     modal.innerHTML = `
     <button id="close">𝓧</button>
-    <h3>The Trinity</h3>
-    <p>The trinity respresents God, our Heavenly Father, His Son Jesus Christ, and the Holy Ghost. They are known as the trinity because they are 3 different characters, but have 1 same objective, which is to bring upon the man inmortailty and Eternal Life.</p>
-    <p>The three of them work together to bring peace to the world and to enlighten us, God's children.</p>
+    <h3>La Trinidad</h3>
+    <p>La Trinidad representa a Dios, nuestro Padre Celestial, a Su Hijo Jesucristo y al Espíritu Santo. Se les conoce como la Trinidad porque son tres personajes distintos, pero tienen un mismo objetivo: brindar al ser humano la inmortalidad y la vida eterna.</p>
+    <p>Los tres trabajan juntos para traer paz al mundo e iluminarnos a nosotros, los hijos de Dios.</p>
 `;
     modal.showModal();
 
@@ -165,10 +165,10 @@ function answer2() {
     modal.innerHTML = '';
     modal.innerHTML = `
     <button id="close">𝓧</button>
-    <h3>Adore saints?</h3>
-    <p>No, as members of the Church of Jesus Christ we do not adore any saint, statue or other "God".</p>
-    <p>We adore our loving Heavenly Father, pray to him and we believe He is the only true living God there is</p>
-    <p>We adore our Heavenly Father by praying to him, singing Hymns, studying His word in the Bible and The Book Of Mormon and many other ways</p>
+    <h3>Adoran Santos?</h3>
+    <p>No, como miembros de la Iglesia de Jesucristo no adoramos a ningún santo, estatua ni a ningún otro «dios».</p>
+    <p>Adoramos a nuestro amoroso Padre Celestial, le oramos y creemos que Él es el único Dios verdadero y vivo que existe.</p>
+    <p>Adoramos a nuestro Padre Celestial orándole, cantando himnos, estudiando Su palabra en la Biblia y en el Libro de Mormón, y de muchas otras maneras.</p>
 `;
     modal.showModal();
 
@@ -189,10 +189,10 @@ function answer3() {
     modal.innerHTML = '';
     modal.innerHTML = `
     <button id="close">𝓧</button>
-    <h3>God has a body?</h3>
-    <p>Yes, we believe that God has a body of flesh and bones just like us</p>
-    <p>In D&C 130:22 it says, "The father has body of flesh and bones as tangible as man’s; the Son also;"</p>
-    <p>The Holy Ghost however, does not have a body because it is the Spirit of God.</p>
+    <h3>Dios tiene cuerpo?</h3>
+    <p>Sí, creemos que Dios tiene un cuerpo de carne y huesos, tal como nosotros.</p>
+    <p>En Doctrina y Convenios 130:22 dice: "El Padre tiene un cuerpo de carne y huesos tan tangible como el del hombre; así también el Hijo;"</p>
+    <p>El Espíritu Santo, sin embargo, no tiene cuerpo porque es el Espíritu de Dios.</p>
 `;
     modal.showModal();
 
@@ -213,9 +213,9 @@ function answer4() {
     modal.innerHTML = '';
     modal.innerHTML = `
     <button id="close">𝓧</button>
-    <h3>Yes we are!</h3>
-    <p>We believe in God, the Eternal Father, His Son Jesus Christ and the Holy Ghost.</p>
-    <p>In fact our name says it all: The Church of Jesus Christ. We are christians becase we believe in Jesus Christ.</p>
+    <h3>Si lo somos!</h3>
+    <p>Creemos en Dios, el Padre Eterno, en Su Hijo Jesucristo y en el Espíritu Santo.</p>
+    <p>De hecho, nuestro nombre lo dice todo: La Iglesia de Jesucristo. Somos cristianos porque creemos en Jesucristo.</p>
 `;
     modal.showModal();
 
