@@ -8,12 +8,15 @@
     }
 
     #navigation.open {
-        display: block;
-        width: 10rem;
+        display: flex;
+        width: 19rem;
+        margin: 0 auto;
+        flex-direction: column;
     }
 
     nav a {
         font-size: 1.2em;
+        border-bottom: 1px solid #ddd;
     }
 
     .weather {
@@ -37,7 +40,7 @@
     }
 
     .title {
-        width: 95.3%;
+        width: 96%;
     }
 
     .personal-info {
